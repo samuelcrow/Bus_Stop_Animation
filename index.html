@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- stuff to add:
+    - Button to select stop - Done
+    - Stop Animation - Done
+    - Display Lng & Lat - Done
+    - Color Picker
+-->
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Add a default marker</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+<link href="styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="map"></div>
+
+<div class="map-overlay top">
+    <button id="mainButtons" onclick="move()">
+        Show stops between MIT and Harvard
+    </button>
+    <button id="mainButtons" onclick="stopMove()">
+        Pause stops
+    </button>
+    <button id="mainButtons" onclick="requestedPosition()">Go to stop</button>
+    
+    <input type="text" id="stopRequest">
+
+    <div id="currentStop"></div>
+    <div id="currentStopNumber"></div>
+
+</div>
+<script src="mapanimation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+  body { 
+    margin: 0; 
+    padding: 0; 
+  }
+  #map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: -10;
+  }
+  .map-overlay {
+    display: grid;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    grid-template-columns: auto auto auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto ;
+  }
+  #mainButtons {
+    font-size: 1em;
+    opacity: .85;
+    background-color: rgb(245, 245, 245);
+    width: auto;
+    border-color: white;
+    padding: 5px;
+    border-width: 1px;
+      border-color: black;
+      border-style: solid;
+  }
+  #currentStop {
+    background-color: rgb(245, 245, 245);
+    grid-row: 2 / 3;
+    padding: 5px;
+    text-align: center;
+    font: bold;
+  }
+
+  #currentStopNumber {
+    background-color: rgb(245, 245, 245);
+    grid-row: 2 / 3;
+    padding: 5px;
+    text-align: center;
+  }
+  #stopRequest {
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+      border-width: 1px;
+      border-color: black;
+      border-style: solid;
+  }
+  #currentStopNumber, #currentStop {
+      border-width: 1px;
+      border-color: black;
+      border-style: solid;
+  }
